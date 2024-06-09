@@ -1,0 +1,209 @@
+/* https://alvaromontoro.com/blog/68002/creating-a-firework-effect-with-css */
+
+/*REGLER LE STICKY*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url('/poppins/Poppins-Regular.ttf'), format('truetype');
+}
+
+*,
+*:visited {
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: white;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin: 0px;
+    transition-duration: 0.3s;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 100, 100) radial-gradient(rgb(0, 50, 50) 10%, transparent 0%);
+    background-size: 25px 25px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #logo {
+    width: 70px;
+    padding: 10px;
+}
+
+body header ul {
+    padding-right: 40px;
+}
+
+body header ul li .contact {
+    font-size: 30px;
+}
+
+body header ul li .contact:hover {
+    cursor: pointer;
+}
+
+.types:hover,
+.contact i:hover,
+.lien_git:hover {
+    color: rgb(99, 219, 255);
+}
+
+main {
+    position: relative;
+    padding: 10px;
+    margin: 0px;
+}
+
+.presentation .infos_presentation {
+    display: flex;
+    align-items: center;
+}
+
+.presentation .infos_presentation #tronche {
+    width: 250px;
+    border-radius: 30px;
+}
+
+.presentation .infos_presentation #tronche:hover {
+    content: url('../Images/moi_fun.png');
+}
+
+main .barre_selection ul li,
+body header ul li {
+    list-style-type: none;
+    text-align: center;
+    display: inline;
+}
+
+body main #retex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body main #retex .proj {
+    background-color: rgba(60, 200, 200, 0.5);
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body main #retex .proj h3 {
+    text-align: center;
+}
+
+body main #retex .proj .illu_proj {
+    height: 225px;
+    border-radius: 10px;
+}
+
+body main #retex .proj .voir_plus {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+body main #retex .proj .voir_plus .button {
+    box-shadow: 4px 4px 0px black;
+    text-align: center;
+    background-color: rgb(115, 115, 255);
+    border: 2px solid rgb(140, 140, 255);
+    border-radius: 5px;
+}
+
+body main #retex .proj .voir_plus i {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+body main #retex .proj .voir_plus i:hover {
+    transform: scale(1.1);
+}
+
+body main #retex .proj .voir_plus .button:hover {
+    box-shadow: 1px 1px 0px black;
+    transform: translateY(3px);
+    filter: saturate(0.75);
+}
+
+body main #boutons_flottants .langue {
+    width: 80px;
+    border-radius: 10px;
+}
+
+body main #boutons_flottants .langue:hover {
+    transform: scale(1.1);
+}
+
+body main #boutons_flottants {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 15px;
+}
+
+body main #boutons_flottants i {
+    background-color: rgba(180, 255, 245, 0.5);
+    border-radius: 50px;
+    font-size: 50px;
+    padding: 1px 4px 1px 6px;
+    right: 30px;
+}
+
+body main #boutons_flottants a i:hover {
+    transform: scale(1.1);
+}
+
+/* taille téléphone */
+@media screen and (max-width: 500px) {
+
+    body main .presentation .infos_presentation .tronche {
+        width: 65%;
+    }
+
+    main .barre_selection ul li {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        line-height: 12px;
+    }
+
+    main .presentation .infos_presentation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    body header ul {
+        padding: 0px 10px 0px 0px;
+    }
+
+    .contact {
+        padding-right: 0.1em;
+    }
+
+    body main #retex .proj .illu_proj {
+        height: 50vw;
+    }
+
+    body main .contact ul li i {
+        padding: 5px;
+    }
+}
