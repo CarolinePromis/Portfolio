@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: local('Poppins'), url('/poppins/Poppins-Regular.ttf'), format('truetype');
+    src: local('Poppins'), url('/Portfolio/poppins/Poppins-Regular.ttf'), format('truetype');
 }
 
 *,
@@ -80,7 +80,7 @@ main {
 }
 
 .presentation .infos_presentation #tronche:hover {
-    content: url('../Images/moi_fun.png');
+    content: url('../Portfolio/Images/moi_fun.png');
 }
 
 main .barre_selection ul li,
