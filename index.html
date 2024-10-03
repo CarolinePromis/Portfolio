@@ -14,11 +14,11 @@
 
 <body>
     <header>
-        <a href="#projets"><img id="logo" src="../Portfolio/Images/PC.png" alt="logo de folie"></a>
+        <a style="cursor:pointer;" onclick="window.scrollTo({ top: document.getElementById('barre_selection').offsetTop, behavior: 'smooth' })"><img id="logo" src="../Portfolio/Images/PC.png" alt="logo de folie"></a>
         <ul>
             <!-- <span role="tooltip" data-text-initial="Copier le mail" data-text-end="Copié !"></span> -->
             <li><a class="contact"><i class="fa-solid fa-envelope" id="copie" value="caropromis250@gmail.com"></i></a></li>
-            <li><a class="contact" href="https://github.com/Ceanbao" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a class="contact" href="https://github.com/CarolinePromis" target="_blank"><i class="fa-brands fa-github"></i></a></li>
             <li><a class="contact" href="https://www.linkedin.com/in/caroline-promis/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
         </ul>
     </header>
@@ -38,7 +38,7 @@
         </div>
         <br>
         <h2 id="projets">Mes projets :</h2>
-        <div class="barre_selection">
+        <div id="barre_selection">
             <ul>
                 <li><a class="types" href="">Tous</a></li>
                 <li><a class="types" href="">Web</a></li>
@@ -53,7 +53,7 @@
                 <h3>Site web créatif</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-site-webFR.pdf" target="_blank">Découvrir</a>
-                    <a href="https://github.com/Ceanbao/Fishats" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/CarolinePromis/Fishats" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -61,7 +61,7 @@
                 <h3>Guerre de pixels</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-pixel-warFR.pdf" target="_blank">Découvrir</a>
-                    <a href="https://github.com/Ceanbao/Pixel-War" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/CarolinePromis/Pixel-War" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -69,7 +69,7 @@
                 <h3>Tutoriel installation réseau</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-markdownFR.pdf" target="_blank">Découvrir</a>
-                    <a href="https://github.com/Ceanbao/Tutoriel-reseau" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/CarolinePromis/Tutoriel-reseau" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -77,7 +77,7 @@
                 <h3>Jeu de plateau</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-jeu-plateauFR.pdf" target="_blank">Découvrir</a>
-                    <a href="https://github.com/Ceanbao/Jeu-de-plateau-Towa" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/CarolinePromis/Jeu-de-plateau-Towa" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -85,13 +85,13 @@
                 <h3>IA jeu de plateau</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-IA-plateauFR.pdf" target="_blank">Découvrir</a>
-                    <a href="https://github.com/Ceanbao/Jeu-de-plateau-Towa" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/CarolinePromis/Jeu-de-plateau-Towa" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
         <div id="boutons_flottants">
             <a href="../Portfolio/English.html"><img class="langue" src="../Portfolio/Images/anglais.png" alt="changement de langue"></a>
-            <a href="#logo"><i class="fa-solid fa-angle-up"></i></a>
+            <a style="cursor:pointer;" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><i class="fa-solid fa-angle-up"></i></a>
         </div>
     </main>
     <script type="module" src="../Portfolio/index.js"></script>

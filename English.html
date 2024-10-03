@@ -14,11 +14,11 @@
 
 <body>
     <header>
-        <a href="#projets"><img id="logo" src="../Portfolio/Images/PC.png" alt="amazing logo"></a>
+        <a style="cursor:pointer;" onclick="window.scrollTo({ top: document.getElementById('barre_selection').offsetTop, behavior: 'smooth' })"><img id="logo" src="../Portfolio/Images/PC.png" alt="amazing logo"></a>
         <ul>
             <!-- <span role="tooltip" data-text-initial="Copy mail address" data-text-end="Copied!"></span> -->
             <li><a class="contact"><i class="fa-solid fa-envelope" id="copie" value="caropromis250@gmail.com"></i></a></li>
-            <li><a class="contact" href="https://github.com/Ceanbao" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a class="contact" href="https://github.com/CarolinePromis" target="_blank"><i class="fa-brands fa-github"></i></a></li>
             <li><a class="contact" href="https://www.linkedin.com/in/caroline-promis/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
         </ul>
     </header>
@@ -38,7 +38,7 @@
         </div>
         <br>
         <h2 id="projets">My projects:</h2>
-        <div class="barre_selection">
+        <div id="barre_selection">
             <ul>
                 <li><a class="types" href="">All</a></li>
                 <li><a class="types" href="">Web</a></li>
@@ -53,7 +53,7 @@
                 <h3>Creative website</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-site-webENG.pdf" target="_blank">Discover</a>
-                    <a href="https://github.com/Ceanbao/Fishats" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/CarolinePromis/Fishats" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -61,7 +61,7 @@
                 <h3>Pixel War</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-pixel-warENG.pdf" target="_blank">Discover</a>
-                    <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/CarolinePromis/Pixel-War" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -69,7 +69,7 @@
                 <h3>Network installation tutorial</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-markdownENG.pdf" target="_blank">Discover</a>
-                    <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/CarolinePromis/Tutoriel-reseau" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -77,7 +77,7 @@
                 <h3>Board game</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-jeu-plateauENG.pdf" target="_blank">Discover</a>
-                    <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/CarolinePromis/Jeu-de-plateau-Towa" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -85,13 +85,13 @@
                 <h3>AI board game</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-IA-plateauENG.pdf" target="_blank">Discover</a>
-                    <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/CarolinePromis/Jeu-de-plateau-Towa" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
         <div id="boutons_flottants">
             <a href="../Portfolio/index.html"><img class="langue" src="../Portfolio/Images/france.png" alt="language switch"></a>
-            <a href="#logo"><i class="fa-solid fa-angle-up"></i></a>
+            <a style="cursor:pointer;" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><i class="fa-solid fa-angle-up"></i></a>
         </div>
     </main>
     <script type="module" src="../Portfolio/index.js"></script>

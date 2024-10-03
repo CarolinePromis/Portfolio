@@ -83,7 +83,7 @@ main {
     content: url('../Portfolio/Images/moi_fun.png');
 }
 
-main .barre_selection ul li,
+main #barre_selection ul li,
 body header ul li {
     list-style-type: none;
     text-align: center;
@@ -179,7 +179,7 @@ body main #boutons_flottants a i:hover {
         width: 65%;
     }
 
-    main .barre_selection ul li {
+    main #barre_selection ul li {
         text-align: center;
         display: flex;
         flex-direction: column;
