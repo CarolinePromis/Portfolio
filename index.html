@@ -9,17 +9,21 @@
     <link href="../Portfolio/Images/PC.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
-        <a style="cursor:pointer;" onclick="window.scrollTo({ top: document.getElementById('barre_selection').offsetTop, behavior: 'smooth' })"><img id="logo" src="../Portfolio/Images/PC.png" alt="logo de folie"></a>
+        <a style="cursor:pointer;"
+            onclick="window.scrollTo({ top: document.getElementById('barre_selection').offsetTop, behavior: 'smooth' })"><img
+                id="logo" src="../Portfolio/Images/PC.png" alt="logo de folie"></a>
         <ul>
-            <!-- <span role="tooltip" data-text-initial="Copier le mail" data-text-end="Copié !"></span> -->
             <li><a class="contact"><i class="fa-solid fa-envelope" id="copie" value="caropromis250@gmail.com"></i></a></li>
-            <li><a class="contact" href="https://github.com/CarolinePromis" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li><a class="contact" href="https://www.linkedin.com/in/caroline-promis/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a class="contact" href="../Portfolio/CV_FR.pdf" target="_blank"><i class="fa-solid fa-user"></i></a></li>
+            <li><a class="contact" href="https://github.com/CarolinePromis" target="_blank"><i
+                        class="fa-brands fa-github"></i></a></li>
+            <li><a class="contact" href="https://www.linkedin.com/in/caroline-promis/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
         </ul>
     </header>
     <main>
@@ -27,18 +31,18 @@
         <h2>Qui je suis :</h2>
         <div class="presentation">
             <div class="infos_presentation">
-                <img id="tronche" src="../Portfolio/Images/moi_ok.png" alt="mon superbe faciès">
+                <img id="tronche" src="../Portfolio/Images/moi_ok.jpeg" alt="mon superbe faciès">
                 <div class="texte_infos_presentation">
                     <h2>Caroline Promis</h2>
-                    <p>En première année de BUT informatique, j'apprends tous les jours de nouvelles façons de coder.
+                    <p>En deuxième année de BUT informatique, j'apprends tous les jours de nouvelles façons de coder.
                     </p>
                 </div>
             </div>
-            <p>Mes langages de prédilection sont HTML, CSS, JavaScript et Java</p>
+            <p>Mes langages de prédilection sont JavaScript, PHP (Symfony) et Java</p>
         </div>
         <br>
         <h2 id="projets">Mes projets :</h2>
-        <div id="barre_selection">
+        <!-- <div id="barre_selection">
             <ul>
                 <li><a class="types" href="">Tous</a></li>
                 <li><a class="types" href="">Web</a></li>
@@ -46,14 +50,15 @@
                 <li><a class="types" href="">3D</a></li>
                 <li><a class="types" href="">Automatisation</a></li>
             </ul>
-        </div>
+        </div> -->
         <div id="retex">
             <div class="proj">
                 <img class="illu_proj" src="../Portfolio/Images/SitePoissons.png" alt="image de site web">
                 <h3>Site web créatif</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-site-webFR.pdf" target="_blank">Découvrir</a>
-                    <a href="https://github.com/CarolinePromis/Fishats" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/CarolinePromis/Fishats" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -61,7 +66,6 @@
                 <h3>Guerre de pixels</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-pixel-warFR.pdf" target="_blank">Découvrir</a>
-                    <a href="https://github.com/CarolinePromis/Pixel-War" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -69,7 +73,6 @@
                 <h3>Tutoriel installation réseau</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-markdownFR.pdf" target="_blank">Découvrir</a>
-                    <a href="https://github.com/CarolinePromis/Tutoriel-reseau" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -77,7 +80,6 @@
                 <h3>Jeu de plateau</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-jeu-plateauFR.pdf" target="_blank">Découvrir</a>
-                    <a href="https://github.com/CarolinePromis/Jeu-de-plateau-Towa" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="proj">
@@ -85,13 +87,14 @@
                 <h3>IA jeu de plateau</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-IA-plateauFR.pdf" target="_blank">Découvrir</a>
-                    <a href="https://github.com/CarolinePromis/Jeu-de-plateau-Towa" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
         <div id="boutons_flottants">
-            <a href="../Portfolio/English.html"><img class="langue" src="../Portfolio/Images/anglais.png" alt="changement de langue"></a>
-            <a style="cursor:pointer;" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><i class="fa-solid fa-angle-up"></i></a>
+            <a href="../Portfolio/English.html"><img class="langue" src="../Portfolio/Images/anglais.png"
+                    alt="changement de langue"></a>
+            <a style="cursor:pointer;" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><i
+                    class="fa-solid fa-angle-up"></i></a>
         </div>
     </main>
     <script type="module" src="../Portfolio/index.js"></script>
