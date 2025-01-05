@@ -18,9 +18,10 @@
             onclick="window.scrollTo({ top: document.getElementById('barre_selection').offsetTop, behavior: 'smooth' })"><img
                 id="logo" src="../Portfolio/Images/PC.png" alt="amazing logo"></a>
         <ul>
-            <li><a class="contact" href="../Portfolio/Images/CV_ENG.pdf" target="_blank"><i class="fa-solid fa-user"></i></a></li>
             <li><a class="contact"><i class="fa-solid fa-envelope" id="copie" value="caropromis250@gmail.com"></i></a>
             </li>
+            <li><a class="contact" href="../Portfolio/Images/CV_ENG.pdf" target="_blank"><i
+                        class="fa-solid fa-user"></i></a></li>
             <li><a class="contact" href="https://github.com/CarolinePromis" target="_blank"><i
                         class="fa-brands fa-github"></i></a></li>
             <li><a class="contact" href="https://www.linkedin.com/in/caroline-promis/" target="_blank"><i
@@ -32,28 +33,28 @@
         <h2>Who I am:</h2>
         <div class="presentation">
             <div class="infos_presentation">
-                <img id="tronche" src="../Portfolio/Images/moi_ok.png" alt="my delicious face">
+                <img id="tronche" src="../Portfolio/Images/moi_ok.jpeg" alt="my delicious face">
                 <div class="texte_infos_presentation">
                     <h2>Caroline Promis</h2>
-                    <p>In my second year at a Computer Science degree, I learn new ways to code everyday.
+                    <p>In my second year of a Computer Science degree, I worked on several smaller and bigger projects.
                     </p>
+                    <p>My CV provides more information.</p>
                 </div>
             </div>
-            <p>My favorite languages are JavaScript, PHP (Symfony), Java</p>
+            <p>Here, I will present some of my projects that deserve your attention.</p>
+            <p>My favorite languages are JavaScript, PHP (Symfony), and Java.</p>
         </div>
         <br>
         <h2 id="projets">My projects:</h2>
-        <!-- <div id="barre_selection">
-            <ul>
-                <li><a class="types" href="">All</a></li>
-                <li><a class="types" href="">Web</a></li>
-                <li><a class="types" href="">Applications</a></li>
-                <li><a class="types" href="">3D</a></li>
-                <li><a class="types" href="">Automation</a></li>
-            </ul>
-        </div> -->
+        <div id="barre_selection">
+            <button class="btn active" onclick="filterSelection('tous')">All</button>
+            <button class="btn" onclick="filterSelection('web')">Web</button>
+            <button class="btn" onclick="filterSelection('logi')">Software</button>
+            <!-- <button class="btn" onclick="filterSelection('3D')">3D</button> -->
+            <button class="btn" onclick="filterSelection('tuto')">Tutorial</button>
+        </div>
         <div id="retex">
-            <div class="proj">
+            <div class="proj web">
                 <img class="illu_proj" src="../Portfolio/Images/SitePoissons.png" alt="website picture">
                 <h3>Creative website</h3>
                 <div class="voir_plus">
@@ -62,28 +63,35 @@
                             class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-            <div class="proj">
+            <div class="proj web">
                 <img class="illu_proj" src="../Portfolio/Images/pixel-war.png" alt="Pixel war game picture">
                 <h3>Pixel War</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-pixel-warENG.pdf" target="_blank">Discover</a>
                 </div>
             </div>
-            <div class="proj">
+            <div class="proj tuto">
                 <img class="illu_proj" src="../Portfolio/Images/doc-reseau.png" alt="Markdown document picture">
                 <h3>Network installation tutorial</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-markdownENG.pdf" target="_blank">Discover</a>
                 </div>
             </div>
-            <div class="proj">
+            <div class="proj logi">
+                <img class="illu_proj" src="../Portfolio/Images/labyrinthe.png" alt="image de jeu de plateau">
+                <h3>Labyrinth game</h3>
+                <div class="voir_plus">
+                    <a class="button" href="../Portfolio/Retex/retex-labyrintheENG.pdf" target="_blank">Découvrir</a>
+                </div>
+            </div>
+            <div class="proj logi">
                 <img class="illu_proj" src="../Portfolio/Images/jeu-plateau.png" alt="Board game picture">
                 <h3>Board game</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-jeu-plateauENG.pdf" target="_blank">Discover</a>
                 </div>
             </div>
-            <div class="proj">
+            <div class="proj logi">
                 <img class="illu_proj" src="../Portfolio/Images/IATowaENG.png" alt="Strategy picture">
                 <h3>AI board game</h3>
                 <div class="voir_plus">
@@ -98,7 +106,7 @@
                     class="fa-solid fa-angle-up"></i></a>
         </div>
     </main>
-    <script type="module" src="../Portfolio/index.js"></script>
+    <script src="../Portfolio/index.js"></script>
 </body>
 
 </html>

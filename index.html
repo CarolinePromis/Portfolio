@@ -18,8 +18,10 @@
             onclick="window.scrollTo({ top: document.getElementById('barre_selection').offsetTop, behavior: 'smooth' })"><img
                 id="logo" src="../Portfolio/Images/PC.png" alt="logo de folie"></a>
         <ul>
-            <li><a class="contact"><i class="fa-solid fa-envelope" id="copie" value="caropromis250@gmail.com"></i></a></li>
-            <li><a class="contact" href="../Portfolio/Images/CV_FR.pdf" target="_blank"><i class="fa-solid fa-user"></i></a></li>
+            <li><a class="contact"><i class="fa-solid fa-envelope" id="copie" value="caropromis250@gmail.com"></i></a>
+            </li>
+            <li><a class="contact" href="../Portfolio/Images/CV_FR.pdf" target="_blank"><i
+                        class="fa-solid fa-user"></i></a></li>
             <li><a class="contact" href="https://github.com/CarolinePromis" target="_blank"><i
                         class="fa-brands fa-github"></i></a></li>
             <li><a class="contact" href="https://www.linkedin.com/in/caroline-promis/" target="_blank"><i
@@ -34,25 +36,26 @@
                 <img id="tronche" src="../Portfolio/Images/moi_ok.jpeg" alt="mon superbe faciès">
                 <div class="texte_infos_presentation">
                     <h2>Caroline Promis</h2>
-                    <p>En deuxième année de BUT informatique, j'apprends tous les jours de nouvelles façons de coder.
-                    </p>
+                    <p>En deuxième année de BUT informatique, j'ai eu l'occasion de travailler sur plusieurs projets
+                        plus ou moins importants.</p>
+                    <p>Vous trouverez davantage d'informations dans mon CV.</p>
                 </div>
             </div>
-            <p>Mes langages de prédilection sont JavaScript, PHP (Symfony) et Java</p>
+            <p>Je vais vous présenter ici quelques-uns de mes propres projets qui, selon moi, méritent votre attention.
+            </p>
+            <p>Mes langages de prédilection sont JavaScript, PHP (Symfony) et Java.</p>
         </div>
         <br>
         <h2 id="projets">Mes projets :</h2>
-        <!-- <div id="barre_selection">
-            <ul>
-                <li><a class="types" href="">Tous</a></li>
-                <li><a class="types" href="">Web</a></li>
-                <li><a class="types" href="">Applications</a></li>
-                <li><a class="types" href="">3D</a></li>
-                <li><a class="types" href="">Automatisation</a></li>
-            </ul>
-        </div> -->
+        <div id="barre_selection">
+            <button class="btn active" onclick="filterSelection('tous')">Tous</button>
+            <button class="btn" onclick="filterSelection('web')">Web</button>
+            <button class="btn" onclick="filterSelection('logi')">Logiciel</button>
+            <!-- <button class="btn" onclick="filterSelection('3D')">3D</button> -->
+            <button class="btn" onclick="filterSelection('tuto')">Tutoriel</button>
+        </div>
         <div id="retex">
-            <div class="proj">
+            <div class="proj web">
                 <img class="illu_proj" src="../Portfolio/Images/SitePoissons.png" alt="image de site web">
                 <h3>Site web créatif</h3>
                 <div class="voir_plus">
@@ -61,28 +64,35 @@
                             class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-            <div class="proj">
+            <div class="proj web">
                 <img class="illu_proj" src="../Portfolio/Images/pixel-war.png" alt="image de jeu pixel war">
                 <h3>Guerre de pixels</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-pixel-warFR.pdf" target="_blank">Découvrir</a>
                 </div>
             </div>
-            <div class="proj">
+            <div class="proj tuto">
                 <img class="illu_proj" src="../Portfolio/Images/doc-reseau.png" alt="image de document Markdown">
                 <h3>Tutoriel installation réseau</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-markdownFR.pdf" target="_blank">Découvrir</a>
                 </div>
             </div>
-            <div class="proj">
+            <div class="proj logi">
+                <img class="illu_proj" src="../Portfolio/Images/labyrinthe.png" alt="image de jeu de plateau">
+                <h3>Jeu de labyrinthe</h3>
+                <div class="voir_plus">
+                    <a class="button" href="../Portfolio/Retex/retex-labyrintheFR.pdf" target="_blank">Découvrir</a>
+                </div>
+            </div>
+            <div class="proj logi">
                 <img class="illu_proj" src="../Portfolio/Images/jeu-plateau.png" alt="image de jeu de plateau">
                 <h3>Jeu de plateau</h3>
                 <div class="voir_plus">
                     <a class="button" href="../Portfolio/Retex/retex-jeu-plateauFR.pdf" target="_blank">Découvrir</a>
                 </div>
             </div>
-            <div class="proj">
+            <div class="proj logi">
                 <img class="illu_proj" src="../Portfolio/Images/IATowaFR.png" alt="image de stratégie">
                 <h3>IA jeu de plateau</h3>
                 <div class="voir_plus">
@@ -97,7 +107,7 @@
                     class="fa-solid fa-angle-up"></i></a>
         </div>
     </main>
-    <script type="module" src="../Portfolio/index.js"></script>
+    <script src="../Portfolio/index.js"></script>
 </body>
 
 </html>
